@@ -22,7 +22,8 @@ export default function CharacterList() {
       <h2>Characters</h2>
       {characters.map(character => {
         return <CharacterCard key={character.id} name={character.name}
-                                                 status={character.status} />
+                                                 status={character.status}
+                                                 image={character.image} />
       })}
     </section>
 

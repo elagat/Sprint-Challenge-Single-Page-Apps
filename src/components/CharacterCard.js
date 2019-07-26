@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+import { Card } from "semantic-ui-react";
 
 export default function CharacterCard (props) {
   const [character, setCharacter] = useState({});
 
   return (
-    <span>
+    <Card>
       <h3>{props.name}</h3>
       <p>{props.status}</p>
-    </span>
+      <img src={`${props.image}`}/>
+    </Card>
   )
 }
