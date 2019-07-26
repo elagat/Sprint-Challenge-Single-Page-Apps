@@ -18,8 +18,6 @@ export default function CharacterList() {
   }, []);
 
   return <section className='character-list grid-view'>
-
-      <h2>Characters</h2>
       {characters.map(character => {
         return <CharacterCard key={character.id} name={character.name}
                                                  status={character.status}
