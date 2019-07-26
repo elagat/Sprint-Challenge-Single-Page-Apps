@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { Card } from "semantic-ui-react";
 
-export default function LocationCard (props) {
-  const [location, setLocation] = useState({});
+export default function EpisodeCard (props) {
+  const [episode, setEpisode] = useState({});
 
   return (
     <Card>
       <h3>{props.name}</h3>
-      <p>{props.type}</p>
-      <p>{props.dimension}</p>
+      <p>{props.airdate}</p>
     </Card>
   )
 }
